@@ -1,0 +1,45 @@
+{%load static%}
+
+<!doctype html>
+<html lang="en">
+
+{% include "head.html" %}
+{% include "header.html" %}
+
+
+
+<body>
+
+    <main>
+        <div class="container-fluid mt-5 ">
+            <hr class="between-sections" color="blue">
+            {% include "mywork.html" %}
+
+        </div>
+
+        <div class="container mt-5">
+            <hr class="between-sections" color="blue">
+            {% include "about.html"%}
+            <hr class="between-sections" color="blue">
+
+            {% include "contact.html" %}
+        </div>
+    </main>
+
+    {% include "footer.html"%}
+
+    <div class="dotted-scrollspy clearfix d-none d-sm-block">
+        <ul class="nav smooth-scroll flex-column">
+            <li class="nav-item" id="home"><a class="nav-link" href="#home"><span></span></a></li>
+            <li class="nav-item" id="mywork"><a class="nav-link" href="#mywork"><span></span></a></li>
+            <li class="nav-item" id="about"><a class="nav-link" href="#about"><span></span></a></li>
+            <li class="nav-item" id="contact"><a class="nav-link" href="#contact"><span></span></a></li>
+        </ul>
+
+    </div>
+
+    {% include "script.html" %}
+
+</body>
+
+</html>

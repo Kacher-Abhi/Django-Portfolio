@@ -1,0 +1,83 @@
+<div class="container my-5 py-5 z-depth-1" id="contact">
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+
+        <h1 class="font-weight-bold section-heading mb-5 mt-4 text-center blue-text wow fadeIn" data-wow-delay="0.2s">
+            Contact Us</h1>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+
+                <form action="" method="post">
+                    {% csrf_token%}
+
+
+
+
+                    <p class="text-muted">Contact me anytime, anywhere, through any mode that you please. For quotes,
+                        enquiries, doubts or partnership, whatever it is, feel free to call me, visit us or email me.
+                    </p>
+
+                    <p><span class="font-weight-bold mr-2 ">Email:</span>abhishekbkacher@gmail.com</p>
+                    <p><span class="font-weight-bold mr-2">Phone:</span>+91 9148541750</p>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- Material outline input -->
+                        <div class="md-form md-outline mb-0">
+                            <input type="text" id="form-name" class="form-control" name="name" required>
+                            <label for="form-last-name">Name</label>
+                        </div>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!-- Material outline input -->
+                <div class="md-form md-outline mt-3">
+                    <input type="email" id="form-email" class="form-control" name="email" required>
+                    <label for="form-email">E-mail</label>
+                </div>
+
+                <!-- Material outline input -->
+                <div class="md-form md-outline">
+                    <input type="text" id="form-subject" class="form-control" name="subject" required>
+                    <label for="form-subject">Subject</label>
+                </div>
+
+                <!--Material textarea-->
+                <div class="md-form md-outline mb-3">
+                    <textarea id="form-message" class="md-textarea form-control" rows="3" name="message"
+                        required></textarea>
+                    <label for="form-message">How we can help?</label>
+                </div>
+
+                <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i
+                        class="far fa-paper-plane ml-2"></i></button>
+
+            </div>
+            <!--Grid column-->
+            </form>
+
+        </div>
+        <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>

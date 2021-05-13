@@ -1,0 +1,25 @@
+<div class="container-fluid my-5 py-5 z-depth-1" id="mywork">
+    <section class="section mb-5">
+        <h1 class="font-weight-bold section-heading text-center md-5 blue-text wow fadeIn" data-wow-delay="0.2s">My
+            Works</h1>
+
+        <div class="row wow FadeIn " data-wow-delay="0.4s">
+            <div class="col-md-12">
+                <div id="mdb-lightbox-ui">
+                    <div class="mdb-lightbox mt-5">
+
+                        {% for img in images %}
+                        <figure class="col-md-4">
+                            <img src="{{img.image.url}}" alt="{{img.alt}}" style="min-height : 300px;
+                            min-height: 300px;
+                            min-width: 450px;
+                            max-width: 450px;">
+                        </figure>
+                        {% endfor%}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
