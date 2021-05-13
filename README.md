@@ -1,1 +1,1 @@
-# Django-Portfolio
+# Django-Photography-Portfolio
